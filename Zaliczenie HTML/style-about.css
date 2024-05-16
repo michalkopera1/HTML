@@ -1,0 +1,263 @@
+body{
+    background-color: #ffffff;
+    margin:0;
+    padding: 0;}
+    
+html{
+    margin:0;
+    padding: 0;
+}
+    
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+    
+li {
+    float: right;
+    margin-right: 50px;
+}
+    
+li:last-child {
+  border-right: none;
+}
+    
+ li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-align: center;
+    padding: 35px 6px;
+    text-decoration: none;
+     margin-right: 20px;
+}
+    
+li a:hover:not(.active) {
+    color: #31CDC9;
+}
+    
+.active {
+    color: #31CDC9;
+}
+    
+.image{
+     width:  40px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 70px;   
+}
+
+#small{
+    font-size: 15px;
+    color: #868585;
+}
+
+#big{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.footer {
+    height: 250px;
+    padding-top: 80px;
+    background-color: #141414;;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+.footer div {
+    flex: 1;
+    text-align: center;
+}
+    
+.left {
+    text-align: left;
+}
+    
+.right {
+    text-align: right;
+    padding-right: -100px;
+}
+  
+#background_image{
+    margin-top: -38px;
+    background-size: cover;
+    background-position: center; 
+    background-image: url('background-lady1.jpg'); 
+    width: 100%;
+    height: 400px;
+}
+
+
+#background_image h1{
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    font-family: Bahnschrift;
+    text-align: center;
+    padding-top: 100px;
+    z-index: 1;
+}
+#background_image h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 17px;
+    padding-top: 5px;
+    font-weight: 100;
+}
+
+.panel {
+    background-color: #31CDC9;
+    width: 100%;
+    height: 230px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box, .clock, .heart, .star {
+    width: 4%;
+    margin-right: 18%;
+    margin-top: -10px;
+    text-align: center;
+}
+.box{
+    margin-left: 9%;
+}
+
+.text1 {
+    color: #ffffff;
+    margin: 5px 0;
+    font-size: 22px;
+    margin-top: -70px;
+    padding-left: 140%;
+}
+.text2 {
+    color: #ffffff;
+    margin: 5px 0;
+    font-size: 17px;
+    padding-left: 140%;
+}
+@media screen and (max-width: 1200px) {
+    .panel {
+        max-height: 180px;
+    }
+}
+
+.double{
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+.left-side{
+    width: 50%;
+    height: 800px;
+    background-image: url('poster.jpg'); 
+    background-size: cover;
+    background-position: center;
+    justify-content: left;
+}
+.right-side{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 800px;
+    background-color: #F6F6F6;
+    justify-content: right;
+}
+.right-side h1{
+    color: #000000;
+    font-size: 55px;
+    text-align: left;
+    padding-top: 100px;
+    margin-left: 13%;
+    z-index: 1;
+    font-family: Bahnschrift;
+    font-weight: 200;
+}
+.right-side h2{
+    color: #868585;
+    font-size: 25px;
+    text-align: left;
+    padding-top: 50px;
+    margin-left: 13%;
+    z-index: 1;
+    font-family: Bahnschrift;
+    font-weight: 200;
+    margin-right: 5%;
+}
+.right-side p{
+    color: #000000;
+    font-size: 55px;
+    text-align: left;
+    padding-top: 7%;
+    margin-left: 13%;
+    z-index: 1;
+    font-family: Edwardian Script ITC;
+    font-weight: 200;
+}
+.project{
+    width: 100%;
+    height: 500px;
+}
+.project h1{
+    color: #000000;
+    font-size: 55px;
+    text-align: center;
+    padding-top: 100px;
+    font-family: Bahnschrift;
+    font-weight: 200;
+}
+.project h2{
+    color: #868585;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 0px;
+    font-family: Bahnschrift;
+    font-weight: 200;
+    padding-bottom: 50px;
+}
+.button-project {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: #31CDC9;
+    border: 1px solid #31CDC9;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 45%;
+    height: 48px;
+    line-height: 24px;
+    text-align: center;
+    transition: all .3s;
+}
+
+.button-project:hover {
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    fill: #06f;
+}
+
+@media (min-width: 768px) {
+    .button-project {
+        min-width: 170px;
+    }
+}

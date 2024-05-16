@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" type="text/css" href="style-project.css">
+    <link rel="icon" href="triangle.png" type="image/x-icon">
+</head>
+<body >
+
+<div>
+  
+  <ul>
+    <img class="image" src="triangle.png">
+    <li><a href="Contact.html">CONTACT</a></li>
+    <li><a href="About.html">ABOUT</a></li>
+    <li><a href="Home.html">HOME</a></li>
+  </ul>
+</div>
+<div class="content">
+  <div class="mySlides">
+    <img class="photo" src="slider1.jpg">
+    <h1>Light Breakfast</h1>
+    <h2>Light his can't a creeping. Be, bring blessed night. Replenish blessed creature good, Saw earth every creepeth lights day, divided abundantly form. In. Said given lights Sixth the male Upon their multiply, Kind beast. Him tree upon<br><br>
+       Dominion day herb she'd creeping divide darkness.<br> Which Subdue had.<br><br><br>
+       <strong>Client:</strong>&nbsp;&nbsp;&nbsp;Luis Hilton<br><br>
+       <strong>Date:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;02.11.2024<br><br>
+       <strong>Share:</strong>&nbsp;&nbsp;&nbsp;Facebook, Twitter</h2>
+  </div>
+  <div class="mySlides">
+    <img class="photo" src="slider2.jpg">
+    <h1>Light Breakfast</h1>
+    <h2>Light his can't a creeping. Be, bring blessed night. Replenish blessed creature good, Saw earth every creepeth lights day, divided abundantly form. In. Said given lights Sixth the male Upon their multiply, Kind beast. Him tree upon<br><br>
+      Cattle. Dominion day herb she'd creeping divide darkness.<br> Which Subdue had.<br><br><br>
+      <strong>Client:</strong>&nbsp;&nbsp;&nbsp;Emma Morris<br><br>
+      <strong>Date:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25.07.2024<br><br>
+      <strong>Share:</strong>&nbsp;&nbsp;&nbsp;Facebook, TikTok, Pintrest</h2>
+  </div>
+  <div class="mySlides">
+    <img class="photo" src="slider3.jpg">
+    <h1>Light Breakfast</h1>
+    <h2>Light his can't a creeping. Be, bring blessed night. Replenish blessed creature good, Saw earth every creepeth lights day, divided abundantly form. In. Said given lights Sixth the male Upon their multiply, Kind beast. Him tree upon<br><br>
+      Cattle. Dominion day herb she'd creeping divide darkness.<br> Which Subdue had.<br><br><br>
+      <strong>Client:</strong>&nbsp;&nbsp;&nbsp;Luise Sophere<br><br>
+      <strong>Date:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20.02.2024<br><br>
+      <strong>Share:</strong>&nbsp;&nbsp;&nbsp;Facebook, Twitter, Pintrest</h2>
+  </div>
+
+</div>
+<div class="buttons">
+  <button class="button1" onclick="plusDivs(-1)" role="button"><span class="text">< PREVIOUS PROJECT</span></button>
+  <button class="button2" onclick="plusDivs(1)" role="button"><span class="text">NEXT PROJECT ></span></button>
+  <img class="spacer" src="spacer.png">
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<div >
+  <footer class="footer">
+    <div id="left">
+      <p id="big"> Piroll Design Inc.</p>
+      <p id="small"> @2023 Piroll. All rights reserved.</p>
+      <p id="small"> Designed by Michał Kopera.</p>
+    </div>
+    <div id="right">
+      <p id="small"> email@gmail.com</p>
+      <p id="small"> +48 111 111 111</p>
+    </div>
+    <div id="center-right">
+      <p id="small"> Projects</p>
+      <p id="small"> About</p>
+      <p id="small"> Services</p>
+      <p id="small"> Carieer</p>
+    </div>
+    <div id="center-left">
+      <p id="small"> News</p>
+      <p id="small"> Events</p>
+      <p id="small"> Contact</p>
+      <p id="small"> Legals</p>
+    </div>
+    <div id="center">
+      <p id="small"> Facebook</p>
+      <p id="small"> Instagram</p>
+      <p id="small"> Twitter</p>
+      <p id="small"> Dribble</p>
+    </div>
+
+    </footer>
+
+</div>
+</body>
+
+

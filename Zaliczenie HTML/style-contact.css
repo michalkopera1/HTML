@@ -1,0 +1,287 @@
+body{
+    background-color: #F6F6F6;
+    margin:0;
+    padding: 0;
+    font-family: Bahnschrift;
+}
+    
+html{
+    margin:0;
+    padding: 0;
+}
+    
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+    
+li {
+    float: right;
+    margin-right: 50px;
+}
+    
+li:last-child {
+    border-right: none;
+}
+    
+li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-align: center;
+    padding: 35px 6px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+    
+li a:hover:not(.active) {
+    color: #31CDC9;
+}
+    
+.active {
+    color: #31CDC9;
+}
+    
+.image{
+    width:  40px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 70px;  
+}  
+    
+#small{
+    font-size: 15px;
+    color: #868585;
+}
+
+#big{
+    font-size: 20px;
+    color: #ffffff;
+}
+.footer {
+    height: 250px;
+    padding-top: 80px;
+    background-color: #141414;;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0; 
+    width: 100%;
+    z-index: 9999; 
+}
+    
+.footer div {
+    flex: 1;
+    text-align: center;
+}
+    
+.left {
+    text-align: left;
+}
+    
+.right {
+    text-align: right;
+    padding-right: -100px;
+}
+
+.info {
+    display: flex;
+    height: 650px;
+}
+.info-left{
+    flex: 40%; 
+    background-color: #F6F6F6;
+    padding: 20px;
+}
+.info-right{
+    flex: 60%; 
+    background-color: #F6F6F6; 
+    padding: 20px;
+}
+
+.info-left h1 {
+    margin-top: 50px;
+    margin-left: 14%;
+    font-size: 35px ;
+    margin-bottom: 30px;
+}
+.info-left h2 {
+    margin-top: 20px;
+    margin-left: 14%;
+    color: #868585;
+    font-size: 20px ;
+    font-weight: 100;
+}
+
+.info-left h3 {
+    display: flex;
+    margin-top: -45px;
+    margin-left: 39%;
+    color: #868585;
+    font-size: 20px ;
+    font-weight: 100;
+}
+.info-left p {
+    margin-top: 6.5%;
+    margin-left: 14%;
+    color: #000000;
+    font-size: 22px ;
+    font-weight: bold;
+}
+
+#form-div {
+	margin-left: -15vw;
+	width: 40%;
+	padding-top:70px;
+	padding-bottom:50px;
+	box-sizing: border-box;
+	float: left;
+	left: 50%;
+	position: absolute;
+    margin-top:30px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+	font-size: 16px;
+    margin-left: 33.5%;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #ffffff;
+	padding: 13px 13px 13px 5%;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+    border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fbfbfb;
+	box-shadow: 0;
+	border: 3px solid #31CDC9;
+	color: #31CDC9;
+	outline: none;
+    padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+#name{
+	width: 100%;
+    margin-left: 76%;
+}
+
+#email{
+	width: 100%;
+    margin-left: 76%;
+}
+
+#title{
+	width: 100%;
+}
+
+#comment{
+	width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+	
+.submit:hover {
+	color: #3498db;
+}
+	
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+.name-email {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name,
+.email {
+    width: 44%;
+}
+
+.name input,
+.email input {
+    width: calc(100% - 42px); 
+    padding: 13px 13px 13px 12%;
+}
+
+.button-project {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #31CDC9;
+    border: 1px solid #31CDC9;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 150px;
+    height: 48px;
+    line-height: 24px;
+    text-align: center;
+    transition: all .3s;
+    margin-left: 13.3vw;
+}
+
+.button-project:hover {
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    fill: #06f;
+}
+
+@media (min-width: 768px) {
+    .button-project {
+        min-width: 170px;
+    }
+}
+
+.image2 {
+    max-width: 80%; 
+    height: auto;
+    padding-bottom: 100px;
+    padding-top: 2%;
+    display: block;
+    margin: 0 auto; 
+    width: 100%;
+}
+
